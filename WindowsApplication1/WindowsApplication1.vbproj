@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51DD6D71-6231-48E3-85B6-7E35FED6BD93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>WindowsApplication1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBookRecord.Designer.vb">
+      <DependentUpon>AdminBookRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBookRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMempay.Designer.vb">
+      <DependentUpon>AdminMempay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMempay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSalary.Designer.vb">
+      <DependentUpon>AdminSalary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSalary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookDues.Designer.vb">
+      <DependentUpon>BookDues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookDues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookEntry.Designer.vb">
+      <DependentUpon>BookEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookIssue.Designer.vb">
+      <DependentUpon>BookIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReturn.Designer.vb">
+      <DependentUpon>BookReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookUpdate.Designer.vb">
+      <DependentUpon>BookUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpBookStock.Designer.vb">
+      <DependentUpon>EmpBookStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmpBookStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.vb">
+      <DependentUpon>Employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAddMem.Designer.vb">
+      <DependentUpon>EmployeeAddMem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAddMem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMemPay.Designer.vb">
+      <DependentUpon>EmployeeMemPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMemPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employeereg.Designer.vb">
+      <DependentUpon>Employeereg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employeereg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployRemoveMember.Designer.vb">
+      <DependentUpon>EmployRemoveMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployRemoveMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpMemberShow.Designer.vb">
+      <DependentUpon>EmpMemberShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmpMemberShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarymanagementDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarymanagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarymanagementDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarymanagementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarymanagementDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarymanagementDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Member.Designer.vb">
+      <DependentUpon>Member.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Member.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="password.Designer.vb">
+      <DependentUpon>password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salaryreport.Designer.vb">
+      <DependentUpon>salaryreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="salaryreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBookStock.Designer.vb">
+      <DependentUpon>SearchBookStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBookStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowEmp.Designer.vb">
+      <DependentUpon>ShowEmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShowEmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Showmem.Designer.vb">
+      <DependentUpon>Showmem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Showmem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updateemp.Designer.vb">
+      <DependentUpon>Updateemp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Updateemp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatemem.Designer.vb">
+      <DependentUpon>updatemem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updatemem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBookRecord.resx">
+      <DependentUpon>AdminBookRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMempay.resx">
+      <DependentUpon>AdminMempay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSalary.resx">
+      <DependentUpon>AdminSalary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookDues.resx">
+      <DependentUpon>BookDues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookEntry.resx">
+      <DependentUpon>BookEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookIssue.resx">
+      <DependentUpon>BookIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReturn.resx">
+      <DependentUpon>BookReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookUpdate.resx">
+      <DependentUpon>BookUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpBookStock.resx">
+      <DependentUpon>EmpBookStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAddMem.resx">
+      <DependentUpon>EmployeeAddMem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMemPay.resx">
+      <DependentUpon>EmployeeMemPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employeereg.resx">
+      <DependentUpon>Employeereg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployRemoveMember.resx">
+      <DependentUpon>EmployRemoveMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpMemberShow.resx">
+      <DependentUpon>EmpMemberShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member.resx">
+      <DependentUpon>Member.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password.resx">
+      <DependentUpon>password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salaryreport.resx">
+      <DependentUpon>salaryreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBookStock.resx">
+      <DependentUpon>SearchBookStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowEmp.resx">
+      <DependentUpon>ShowEmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Showmem.resx">
+      <DependentUpon>Showmem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updateemp.resx">
+      <DependentUpon>Updateemp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatemem.resx">
+      <DependentUpon>updatemem.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LibrarymanagementDataSet.xsc">
+      <DependentUpon>LibrarymanagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarymanagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibrarymanagementDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibrarymanagementDataSet.xss">
+      <DependentUpon>LibrarymanagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarymanagementDataSet1.xsc">
+      <DependentUpon>LibrarymanagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarymanagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibrarymanagementDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibrarymanagementDataSet1.xss">
+      <DependentUpon>LibrarymanagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarymanagementDataSet2.xsc">
+      <DependentUpon>LibrarymanagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarymanagementDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibrarymanagementDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibrarymanagementDataSet2.xss">
+      <DependentUpon>LibrarymanagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\197b92496aca28aac26bbb52dfa7555e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-page-background-images-hd-10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1524995997946-a1c2e315a42f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1481627834876-b7833e8f5570.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c-apps-library-management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOW-DO-YOU-DESIGN-A-LIBRARY-MANAGEMENT-SYSTEM-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frequently Asked Questions--The Midland MBA_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1507842217343-583bb7270b66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS_LibraryManagementSystems.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42-425137_download-library-wallpaper-wallpapers-design-library-management-system.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42-425137_download-library-wallpaper-wallpapers-design-library-management-system1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library_inscription_sign_140549_1920x1080.jpg" />
+    <None Include="Resources\photo-1553941884-f8947df6e0ba.jpg" />
+    <None Include="Resources\photo-1507842217343-583bb7270b661.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\Ok-icon.png" />
+    <None Include="Resources\Done-icon.png" />
+    <None Include="Resources\Dec.png" />
+    <None Include="Resources\load-download-icon.png" />
+    <None Include="Resources\loading-icon.png" />
+    <None Include="Resources\Close-2-icon.png" />
+    <None Include="Resources\Exit application.png" />
+    <None Include="Resources\Update details.png" />
+    <None Include="Resources\search-button-icon.png" />
+    <None Include="Resources\Reminders-Mac-Book-icon.png" />
+    <None Include="Resources\Printing-Books-icon.png" />
+    <None Include="Resources\Play-Books-icon.png" />
+    <None Include="Resources\books-icon.png" />
+    <None Include="Resources\menustripicon.png" />
+    <None Include="Resources\06-Wallet-icon.png" />
+    <None Include="Resources\administrator-icon.png" />
+    <None Include="Resources\sales-report-icon %281%29.png" />
+    <None Include="Resources\sales-report-icon.png" />
+    <None Include="Resources\edit-file-icon.png" />
+    <None Include="Resources\Preppy-iconsmall.png" />
+    <None Include="Resources\document-icon %281%29.png" />
+    <None Include="Resources\document-icon.png" />
+    <None Include="Resources\brown-man-icon %281%29.png" />
+    <None Include="Resources\brown-man-icon1.png" />
+    <None Include="Resources\brown-man-icon.png" />
+    <None Include="Resources\Preppy-icon1.png" />
+    <None Include="Resources\Preppy-icon %282%29.png" />
+    <None Include="Resources\Preppy-icon.png" />
+    <None Include="Resources\vector-illustration-reading-ebooks-online-260nw-270833330__01.jpg" />
+    <None Include="Resources\vector-open-paper-book-speech-260nw-236184151__01.jpg" />
+    <None Include="Resources\books-1163695_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Librarymanagement.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
